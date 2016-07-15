@@ -59,8 +59,8 @@ fn tw_hook(rt: &Runtime) {
     } else if subcmd.is_present("delete") {
         // The used hook is "on-modify". This hook gives two json-objects
         // per usage und wants one (the second one) back.
-        let stdin         = stdin();
-        let stdin         = stdin.lock();
+        let stdin = stdin();
+        let stdin = stdin.lock();
 
         match import_tasks(stdin) {
             Ok(ttasks) => for (counter, ttask) in ttasks.iter().enumerate() {
