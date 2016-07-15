@@ -46,8 +46,8 @@ impl<'a> Task<'a> {
     /// * Ok(Err(String)) - where the String is the String read from the `r` parameter
     /// * Err(_)          - where the error is an error that happened during evaluation
     ///
-    pub fn get_from_import<R: BufRead>(store: &'a Store, mut r: R) -> Result<RResult<Task<'a>,
-    String>> {
+    pub fn get_from_import<R: BufRead>(store: &'a Store, mut r: R) -> Result<RResult<Task<'a>, String>>
+    {
         unimplemented!()
     }
 
