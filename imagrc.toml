@@ -45,6 +45,9 @@ abort_on_repo_init_failure = true
 # Ensure to be on this branche before doing anything.
 ensure_branch = "master"
 
+# Try to checkout the ensure_branch if it isn't checked out
+try_checkout_ensure_branch = true
+
 [store.hooks.stdhook_git_retrieve]
 aspect = "vcs"
 
@@ -55,6 +58,9 @@ abort_on_repo_init_failure = true
 
 # Ensure to be on this branche before doing anything.
 ensure_branch = "master"
+
+# Try to checkout the ensure_branch if it isn't checked out
+try_checkout_ensure_branch = true
 
 [store.hooks.stdhook_git_delete]
 aspect = "vcs"
@@ -67,6 +73,9 @@ abort_on_repo_init_failure = true
 # Ensure to be on this branche before doing anything.
 ensure_branch = "master"
 
+# Try to checkout the ensure_branch if it isn't checked out
+try_checkout_ensure_branch = true
+
 [store.hooks.stdhook_git_update]
 aspect = "vcs"
 
@@ -77,4 +86,7 @@ abort_on_repo_init_failure = true
 
 # Ensure to be on this branche before doing anything.
 ensure_branch = "master"
+
+# Try to checkout the ensure_branch if it isn't checked out
+try_checkout_ensure_branch = true
 
