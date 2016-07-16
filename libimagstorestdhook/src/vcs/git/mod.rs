@@ -1,5 +1,6 @@
 use git2::Repository;
 
+mod action;
 mod config;
 pub mod create;
 pub mod delete;
